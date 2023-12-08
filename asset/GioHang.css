@@ -1,0 +1,90 @@
+/* Tác giả : Ngô Thanh Phương - B2004803 */
+/* Tài liệu tham khảo : Các tài liệu tham khảo và ví dụ thầy gửi. */
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+     margin-top: 84px;
+}
+
+.container {
+     width: 100% !important;
+     margin: auto !important;
+     background-color: #fff;
+     color: #000 !important;
+     /* height: 100vh; */
+     height: 70vh;
+}
+
+h1 {
+     color: #000;
+     text-align: center;
+     padding: 50px 0px;
+}
+
+a {
+     /* text-align: center; */
+     text-decoration: none;
+     color: red;
+}
+
+thead th {
+     padding: 20px 0px;
+}
+
+.list__items {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     border-collapse: collapse;
+     width: 90%;
+     margin: auto !important;
+}
+
+.list__head {
+     border: 1px solid skyblue;
+}
+
+:is(.list__foot, .list__body) :is(td, th) {
+     border: 1px solid skyblue;
+     padding: 3px;
+}
+
+/* .list__body tr:nth-child(even){
+      background-color: #ddd;
+    } */
+.list__body tr td:not(:nth-child(3)) {
+     text-align: center;
+}
+
+.list__foot tr td {
+     text-align: center;
+     font-weight: bold;
+}
+
+.list__foot tr td:first-child {
+     text-align: right;
+     padding-right: 10px;
+}
+
+.btn {
+     float: right;
+     margin-right: 19.5%;
+}
+
+#btn-reload, #btn-buy {
+     background-color: #91ad41;
+     border-radius: 30px;
+     border: none;
+     background-image: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%)!important;
+     padding: 10px 20px;
+     color: white;
+     font-size: 17px;
+     cursor: pointer;
+}
+
+#btn-reload {
+     margin-inline-end: 20px;
+}
